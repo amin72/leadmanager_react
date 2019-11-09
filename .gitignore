@@ -22,3 +22,4 @@ script.sh
 tmp/
 .venv
 .env
+db.sqlite3

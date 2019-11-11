@@ -26,3 +26,4 @@ db.sqlite3
 .vscode/
 package-lock.json
 Pipfile.lock
+leadmanager/frontend/static/frontend/main.js

@@ -24,3 +24,5 @@ tmp/
 .env
 db.sqlite3
 .vscode/
+package-lock.json
+Pipfile.lock

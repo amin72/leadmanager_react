@@ -56,5 +56,4 @@ const mapStatetoProps = state => ({
     leads: state.leads.leads
 })
 
-export default connect(mapStatetoProps, {
-    getLeads, deleteLead})(Leads)
+export default connect(mapStatetoProps, {getLeads, deleteLead})(Leads)

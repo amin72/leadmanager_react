@@ -16,7 +16,7 @@ import Alerts from './layout/alerts'
 const alertOptions = {
     // you can also just use 'bottom center'
     position: positions.BOTTOM_CENTER,
-    timeout: 3000,
+    timeout: 5000,
 }
 
 

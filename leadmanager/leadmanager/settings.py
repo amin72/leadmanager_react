@@ -41,6 +41,9 @@ INSTALLED_APPS = [
     # local apps
     'leads.apps.LeadsConfig',
     'frontend.apps.FrontendConfig',
+
+    # third-part apps
+    'knox',
 ]
 
 MIDDLEWARE = [
@@ -130,3 +133,8 @@ MEDIA_URL = '/media/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "assets"),
 ]
+
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': ['knox.auth.TokenAuthentication']
+}

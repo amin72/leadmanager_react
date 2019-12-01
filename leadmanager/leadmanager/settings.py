@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     # local apps
     'leads.apps.LeadsConfig',
     'frontend.apps.FrontendConfig',
+    'accounts.apps.AccountsConfig',
 
     # third-part apps
     'knox',

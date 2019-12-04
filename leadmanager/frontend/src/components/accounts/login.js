@@ -25,8 +25,8 @@ class Login extends Component {
 
         return (
             <div className="col-md-6 m-auto">
-                <div class="card card-body mt-5">
-                    <h2 class="text-center">Login</h2>
+                <div className="card card-body mt-5">
+                    <h2 className="text-center">Login</h2>
                 
                     <form onSubmit={this.onSubmit}>
                         <div className="form-group">

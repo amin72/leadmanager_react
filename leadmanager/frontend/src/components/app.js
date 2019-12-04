@@ -15,6 +15,7 @@ import Alerts from './layout/alerts'
 
 import Login from './accounts/login'
 import Register from './accounts/register'
+import PrivateRoute from './common/private_route'
 
 
 // alert options
@@ -37,7 +38,7 @@ class App extends Component {
 
                             <div className="container">
                                 <Switch>
-                                    <Route exact path="/" component={Dashboard} />
+                                    <PrivateRoute exact path="/" component={Dashboard} />
                                     <Route exact path="/login" component={Login} />
                                     <Route exact path="/register" component={Register} />
                                 </Switch>

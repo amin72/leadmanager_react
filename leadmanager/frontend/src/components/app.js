@@ -17,6 +17,8 @@ import Login from './accounts/login'
 import Register from './accounts/register'
 import PrivateRoute from './common/private_route'
 
+import { loadUser } from '../actions/auth'
+
 
 // alert options
 const alertOptions = {
@@ -27,6 +29,11 @@ const alertOptions = {
 
 
 class App extends Component {
+    componentDidMount() {
+        store.dispatch(loadUser())
+    }
+
+
     render() {
         return (
             <Provider store={store}>

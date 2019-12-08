@@ -3,7 +3,8 @@ import {
     USER_LOADED,
     AUTH_ERROR,
     LOGIN_SUCCESS,
-    LOGIN_FAIL
+    LOGIN_FAIL,
+    LOGOUT_SUCCESS
 } from '../actions/types'
 
 
@@ -42,6 +43,7 @@ export default function(state=initialState, action) {
 
         case LOGIN_FAIL:
         case AUTH_ERROR:
+        case LOGOUT_SUCCESS:
             localStorage.removeItem('token')
             return {
                 ...state,

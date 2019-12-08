@@ -23,7 +23,7 @@ import { loadUser } from '../actions/auth'
 // alert options
 const alertOptions = {
     // you can also just use 'bottom center'
-    position: positions.BOTTOM_CENTER,
+    position: positions.TOP_CENTER,
     timeout: 5000,
 }
 
